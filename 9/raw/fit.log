@@ -1,0 +1,128 @@
+
+
+*******************************************************************************
+Wed Nov 15 22:24:54 2017
+
+
+FIT:    data read from 'RT_edit.txt' using 1:2
+        format = x:z
+        #datapoints = 98
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*exp(b*x+c)+d
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d            
+   0 5.8783277294e+116  0.00e+00 1.74e+59  1.000000e+00  1.000000e+00  1.000000e+00  1.000000e+00
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Wed Nov 15 22:28:57 2017
+
+
+FIT:    data read from 'RT_edit.txt' using 1:2
+        format = x:z
+        x range restricted to [-10.0000 : 10.0000]
+BREAK: No data to fit
+
+*******************************************************************************
+Wed Nov 15 22:29:34 2017
+
+
+FIT:    data read from 'RT_edit.txt' using 1:2
+        format = x:z
+        x range restricted to [-10.0000 : 10.0000]
+BREAK: No data to fit
+
+*******************************************************************************
+Wed Nov 15 22:29:48 2017
+
+
+FIT:    data read from 'RT_edit.txt' using 1:2
+        format = x:z
+        #datapoints = 98
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*exp(b*x+c)+d
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d            
+   0 5.8783277294e+116  0.00e+00 1.74e+59  1.000000e+00  1.000000e+00  1.000000e+00  1.000000e+00
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Wed Nov 15 22:30:04 2017
+
+
+FIT:    data read from 'RT_edit.txt' using 1:2
+        format = x:z
+        #datapoints = 98
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*exp(b*x+c)+d
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d            
+   0 9.6306207638e+01  0.00e+00 5.00e-01  9.999503e-01 -1.000000e+00  9.999503e-01  1.001000e+00
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Wed Nov 15 22:32:29 2017
+
+
+FIT:    data read from 'RT_edit.txt' using 1:2
+        format = x:z
+        #datapoints = 98
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*exp(b*x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d            
+   0 3.4074080571e-02  0.00e+00 1.22e-29  9.999503e-01 -1.000000e+00  9.999503e-01  9.816145e-03
+
+Current data point
+=========================
+#               = 1 out of 98
+x               = -4.69984e+024  
+z               = 0.06492        
+
+Current set of parameters
+=========================
+a               = -4.69984e+024  
+b               = 5.33469e+026   
+c               = 0.99995        
+d               = 0.00981615     
+
+BREAK: Undefined value during function evaluation
+
+*******************************************************************************
+Wed Nov 15 22:32:39 2017
+
+
+FIT:    data read from 'RT_edit.txt' using 1:2
+        format = x:z
+        #datapoints = 98
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*exp(b*x)
+fitted parameters initialized with current variable values
+
+
+Current data point
+=========================
+#               = 1 out of 98
+x               = -4.69984e+024  
+z               = 0.06492        
+
+Current set of parameters
+=========================
+a               = -4.69984e+024  
+b               = 5.33469e+026   
+
+BREAK: Undefined value during function evaluation

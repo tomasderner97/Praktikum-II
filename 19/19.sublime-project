@@ -1,0 +1,13 @@
+{
+	"folders":
+	[
+		{
+			"path": ".",
+			"file_exclude_patterns": ["*.aux", "*.log", "*.out", "*.synctex.gz", "*.sublime-project"],
+			"folder_exclude_patterns":
+			[
+				".ipynb_checkpoints",
+			],
+		}
+	]
+}

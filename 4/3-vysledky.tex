@@ -1,0 +1,38 @@
+\documentclass[0-protokol.tex]{subfiles}
+\begin{document}
+
+Následující tabulka shrnuje naměřené rozměry šesti kovových drátů. Průměr drátů byl měřen na pěti místech rovnoměrně po celé jejich délce mikrometrem s přesností $\SI{0.01}{mm}$. Tyto hodnoty byly následně statisticky zpracovány  podle vztahů uvedených v sekci \textit{statistické vyhodnocení}. Délku drátů jsme měřili pásovým měřidlem, jedná se o vzdálenosti mezi napěťovými kontakty při čtyřbodovém zapojení (dráty považujeme za dostatečně napnuté). Chyba měřidla je zanedbatelná vůči chybě metody měření, spojení drátů s napěťovými kontakty byla neprůhledně překryta, nebylo proto možné určit jejich polohu s přesností větší než zhruba $\SI{2}{cm}$. Všechny naměřené hodnoty jsou uvedeny na posledním listu se záznamem z měření.
+\begin{table}[H] 
+\centering
+\setlength{\tabcolsep}{10pt}
+\input{tab/rozm}
+\caption{Rozměry měřených kovových drátů}
+\label{tab:rozm}
+\end{table}
+
+Následující tabulka obsahuje naměřené hodnoty odporů metodou Wheatstoneova můstku ($R_W$), Thomsonova můstku ($R_T$) a multimetrem \textbf{KEITHLEY 2010} ($R_K$). Chyba měření oběma můstky byla odhadnuta jedním procentem z naměřené hodnoty, protože ačkoliv přesnost samotných můstků je výrazně vyšší, výsledná hodnota je ovlivněna dalšími faktory jako je teplota v místnosti či množství proudu tekoucí drátem. Přesnější určení chyby bylo nad časové možnosti. Chyba měření multimetrem byla určena posledním stabilním místem na displeji, tedy na kterém se hodnota chaoticky neměnila. Tato chyba je řádově vyšší než chyba přístroje udávaná výrobcem.
+\begin{table}[H] 
+\centering
+\setlength{\tabcolsep}{3pt}
+\input{tab/odpory}
+\caption{Odpory naměřené různými metodami}
+\label{tab:odpory}
+\end{table}
+
+Rozdíly v naměřených hodnotách pomocí Wheatstoneova a Thomsonova můstku jsou dány faktem, že při měření Wheatstoneovým můstkem se do výsledku promítne odpor přívodních vodičů, viz teorie. 
+
+Pomocí Wheatstoneova můstku byl změřen odpor přívodních vodičů 
+$$R_V = \SI{0.0231 \pm 0.0002}{\ohm}.$$ 
+Hodnota odporu na svorkách by teoreticky mohla být spočtena podle vztahu \eqref{eq:svorky}, avšak pouze pomocí hodnot odporů Wolframu dostaneme hodnotu s relativní chybou menší než $\SI{100}{\percent}$: 
+$$R_S = \SI{0.0045 \pm 0.0022}{\ohm}.$$
+ Tento výsledek tedy nemá valný smysl.
+
+Podle vztahu \eqref{eq:merny_odpor} byly s pomocí rozměrů z tabulky \ref{tab:rozm} a odporů $R_K$ z tabulky \ref{tab:odpory} spočteny měrné odpory měřených drátů. Tabulka \ref{tab:merny_odpor} dále udává tabulované hodnoty měrného odporu $\rho_0$ při teplotě $\SI{0}{\celsius}$ a teplotního součinitele $\alpha$. Hodnoty měrných odporů $\rho$ byly spočteny podle vztahu \eqref{eq:odpor_teplota} pro teplotu $\SI{25}{\celsius}$. Tabulkové hodnoty pro chromnikl byly převzaty z \cite{tab_crni}, ostatní z \cite{tab_ostatni}.
+\begin{table}[H] 
+\centering
+\setlength{\tabcolsep}{7pt}
+\input{tab/merny_odpor}
+\caption{Měrné odpory měřených kovových drátů srovnané s tabulkovými hodnotami}
+\label{tab:merny_odpor}
+\end{table}
+\end{document}

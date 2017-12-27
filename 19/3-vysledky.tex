@@ -1,0 +1,85 @@
+\documentclass[0-protokol.tex]{subfiles}
+\begin{document}
+
+V následující tabulce jsou uvedeny hodnoty pěti měření poloměrů velké a malé cívky pomocí pásového měřidla. Hodnoty byly získány dělením naměřených průměrů, uvedených na poslední straně v záznamu z měření, dvěma. Chyba měřidla byla určena velikostí nejmenšího dílku, tedy $\SI{1}{mm}$, a dělena dvěma.
+\begin{table}[H] 
+\centering
+\setlength{\tabcolsep}{10pt}
+\input{tab/r}
+\caption{Hodnoty poloměrů cívek}
+\label{tab:r}
+\end{table}
+
+Vzdálenost zrcátka od stupnice byla měřena pásovým měřidlem, měřidlo bylo přiloženo ke stupnici zhruba ve čtvrtině její délky, jedná se tedy o střední hodnotu nejbližšího a nejvzdálenějšího místa stupnice od zrcátka. S touto hodnotou je následně nakládáno, jako by stupnice měla kruhové zakřivení, chyba této aproximace není velká ve srovnání s chybou měřidla, která byla kvůli prohybům a nepříznivým podmínkám měření určena na $\SI{1}{cm}$.
+$$ l = \SI{1.330 \pm 0.010}{m}. $$
+
+\subsection*{Úkol 1}
+
+Následující tabulka shrnuje naměřené a spočtené hodnoty výchylek torzního magnetometru při působení magnetického pole generovaného malou cívkou protékanou proudem $I$. Chyba délkové výchylky $x$ byla určena na $\SI{5}{mm}$, protože i přesto, že kmity magnetometru byly tlumeny lopatkou ponořenou ve vodě, se světelná značka na stupnici pohybovala. Zároveň byla výchylka citlivá na pohyb v jejím okolí. 
+
+Úhlová výchylka byla spočtena pomocí \eqref{eq:alpha}. 
+\begin{table}[H] 
+\centering
+\setlength{\tabcolsep}{10pt}
+\input{tab/M}
+\caption{Naměřené a spočtené hodnoty při použití malé cívky}
+\label{tab:M}
+\end{table}
+\newpage
+V tabulce \ref{tab:V} jsou uvedeny hodnoty stejných veličin jako výše při použití velké cívky.
+\begin{table}[H] 
+\centering
+\setlength{\tabcolsep}{10pt}
+\input{tab/V}
+\caption{Naměřené a spočtené hodnoty při použití velké cívky}
+\label{tab:V}
+\end{table}
+
+\subsection*{Úkol 2}
+
+V grafech \ref{fig:M} a \ref{fig:V} jsou zaznamenány průběhy výchylky $\alpha$ na protékajícím proudu společně s regresními přímkami.
+
+\begin{figure}[H]
+\centering
+\includegraphics[]{M}
+\caption{Závislost výchylky magnetometru na proudu protékajícím malou cívkou}
+\label{fig:M}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[]{V}
+\caption{Závislost výchylky magnetometru na proudu protékajícím velkou cívkou}
+\label{fig:V}
+\end{figure}
+
+Níže jsou uvedeny směrnice regresních přímek.
+
+$$ S^M_{N=5} = \SI{1.354 \pm 0.008 e-2}{\per\ampere}, $$
+$$ S^M_{N=10} = \SI{2.731 \pm 0.012 e-2}{\per\ampere}, $$
+$$ S^V_{N=5} = \SI{0.712 \pm 0.012 e-2}{\per\ampere}, $$
+$$ S^V_{N=10} = \SI{1.417 \pm 0.008 e-2}{\per\ampere}. $$
+
+\subsection*{Úkol 4}
+
+V následující tabulce lze nalézt hodoty pěti měření kmitů tozzního kyvadla, tvořeného kovovým vláknem torzního magnetometru a kovovou tyčkou o momentu setrvačnosti 
+$$ J = \SI{2.72 e-4}{\kilogram\metre\squared}. $$
+Měřeno bylo vždy pět kmitů, naměřené časy lze najít na poslední straně v záznamu z měření. Tabulka obsahuje periody jednoho kmitu. Chyba měření byla určena reakční schopností experimentátora jako $\SI{0.2}{s}$, následně dělena pěti.
+\begin{table}[H] 
+\centering
+\setlength{\tabcolsep}{10pt}
+\input{tab/T}
+\caption{Periody kmitu torzního kyvadla}
+\label{tab:T}
+\end{table}
+
+Pomocí vzorce \eqref{eq:D} byl spočten direkční moment vlákna 
+$$ D = \SI{6.61 \pm 0.13 e-4}{\newton\metre}. $$
+
+\subsection*{Úkol 5}
+
+Pomocí vzorců \eqref{eq:p} a \eqref{eq:m} byl spočten magnetický moment použitého magnetu v Coulombových i Ampérových jednotkách
+$$ p = \SI{3.71 \pm 0.08 e-7}{\weber\metre}, $$
+$$ m = \SI{0.295 \pm 0.006}{\ampere\metre\squared}. $$
+Pro tento výpočet byla použita směrnice závislosti výchylky na proudu tekoucím malou cívkou o deseti závitech $S^M_{N=10}$.
+\end{document}

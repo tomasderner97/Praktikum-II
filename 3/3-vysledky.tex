@@ -1,0 +1,108 @@
+\documentclass[0-protokol.tex]{subfiles}
+\begin{document}
+
+Tabulky \ref{tab:u1_1000} a \ref{tab:u1_inf} obsahují hodnoty vstupní charakteristiky tranzistoru. Pro měření v bázovém obvodu byly použity dva multimetry \textbf{METEX MXD-4660A}. Chyby hodnot byly určeny chybami těchto přístrojů. Nekonečný odpor byl realizován rozpojením kolektorového obvodu.
+\begin{table}[H] 
+\centering
+\setlength{\tabcolsep}{10pt}
+\begin{minipage}[t]{0.48\textwidth}
+\input{tab/u1_1000}
+\caption{Naměřené hodnoty napětí a proudu v bázovém obvodu zapojení \ref{fig:zap_u12} při odporu $R_2 = \SI{1000}{\ohm}$}
+\label{tab:u1_1000}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\input{tab/u1_inf}
+\caption{Naměřené hodnoty napětí a proudu v bázovém obvodu zapojení \ref{fig:zap_u12} při odporu $R_2 = \inf$}
+\label{tab:u1_inf}
+\end{minipage}
+\end{table}
+
+V tabulkách \ref{tab:u2_0.1}, \ref{tab:u2_0.2} a \ref{tab:u2_0.3} jsou zaznamenány hodnoty naměřené v rámci úkolu 2, tedy výstupní charakteristiky tranzistoru. Měření bylo v kolektorovém obvodu provedeno multimetry \textbf{KEITHLEY 2010}, v bázovém jako výše. Chyby hodnot opět sestávají z chyb měřicích přístrojů.
+
+\begin{table}[H] 
+\centering
+\setlength{\tabcolsep}{10pt}
+\begin{minipage}[t]{0.48\textwidth}
+\input{tab/u2_0.1}
+\caption{Naměřené hodnoty napětí a proudu v kolektorovém obvodu zapojení \ref{fig:zap_u12} při proudu bází $I_{BE} = \SI{0.1}{mA}$}
+\label{tab:u2_0.1}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\input{tab/u2_0.2}
+\caption{Naměřené hodnoty napětí a proudu v kolektorovém obvodu zapojení \ref{fig:zap_u12} při proudu bází $I_{BE} = \SI{0.2}{mA}$}
+\label{tab:u2_0.2}
+\end{minipage}
+\end{table}
+
+\newpage
+
+V tabulkách \ref{tab:u3_2V}, \ref{tab:u3_6V} a \ref{tab:u3_10V} jsou uvedeny hodnoty závislosti zesíleného proudu $I_{CE}$ na $I_{BE}$. Byly použity stejné přístroje a stejná metoda určení chyb jako výše.
+\begin{multicols}{2}
+
+\begin{table}[H] 
+\centering
+\setlength{\tabcolsep}{10pt}
+\input{tab/u2_0.3}
+\caption{Naměřené hodnoty napětí a proudu v kolektorovém obvodu zapojení \ref{fig:zap_u12} při proudu bází $I_{BE} = \SI{0.3}{mA}$}
+\label{tab:u2_0.3}
+\end{table}
+
+\begin{table}[H] 
+\raggedleft
+\setlength{\tabcolsep}{10pt}
+\input{tab/u3_2V}
+\caption{Naměřené hodnoty $I_{BE}$ a $I_{CE}$ při napětí $U_{CE} = \SI{2}{V}$}
+\label{tab:u3_2V}
+\end{table}
+
+\begin{table}[H] 
+\raggedleft
+\setlength{\tabcolsep}{10pt}
+\input{tab/u3_6V}
+\caption{Naměřené hodnoty $I_{BE}$ a $I_{CE}$ při napětí $U_{CE} = \SI{6}{V}$}
+\label{tab:u3_6V}
+\end{table}
+
+\begin{table}[H] 
+\raggedleft
+\setlength{\tabcolsep}{10pt}
+\input{tab/u3_10V}
+\caption{Naměřené hodnoty $I_{BE}$ a $I_{CE}$ při napětí $U_{CE} = \SI{10}{V}$}
+\label{tab:u3_10V}
+\end{table}
+
+\end{multicols}
+
+Graf \ref{fig:u1} zobrazuje vstupní charakteristiky tranzistoru. V grafu \ref{fig:u2} jsou zaznamenány přiblížení prvních částí výstupních charakteristik tranzistoru, z tabulek \ref{tab:u2_0.1}, \ref{tab:u2_0.2} a \ref{tab:u2_0.3} lze snadno vyčíst, že zbytek závislosti je téměř konstantní a tedy nikterak zajímavý.
+
+\begin{figure}[H]
+\centering
+\includegraphics[]{u1}
+\caption{Závislost proudu tekoucího bází na napětí mezi bází a emitorem}
+\label{fig:u1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[]{u2}
+\caption{Část závislosti proudu tekoucího kolektorem na napětí mezi kolektorem a emitorem}
+\label{fig:u2}
+\end{figure}
+
+Graf \ref{fig:u3} znázorňuje lineární závislost zesíleného proudu $I_{CE}$ na $I_{BE}$ při třech napětích v kolektorovém obvodu. Tyto závislosti byly proloženy lineárním fitem.
+
+\begin{figure}[H]
+\centering
+\includegraphics[]{u3}
+\caption{Závislost zesíleného proudu $I_{CE}$ na vstupním $I_{BE}$}
+\label{fig:u3}
+\end{figure}
+
+Směrnice lineárních regresí odpovídají činiteli proudového zesílení 
+$$ \beta_{U_{CE} = \SI{2}{V}} = \SI{135.2 \pm 1.3}{}, $$
+$$ \beta_{U_{CE} = \SI{6}{V}} = \SI{140.3 \pm 0.6}{}, $$
+$$ \beta_{U_{CE} = \SI{10}{V}} = \SI{143.7 \pm 0.4}{}. $$
+
+\end{document}

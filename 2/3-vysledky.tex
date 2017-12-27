@@ -1,0 +1,115 @@
+\documentclass[0-protokol.tex]{subfiles}
+\begin{document}
+
+\subsection*{Úkol 1}
+Hodnoty, naměřené přímou metodou měření odporu pomocí zapojení 1$a$, jsou uvedeny v tabulce \ref{tab:u1_a}. Závislost nekorigovaného odporu na proudu je vynesena v grafu \ref{fig:u1_a}, závislost korigovaného odporu na proudu v grafu \ref{fig:u1_a_kor}.
+\begin{table}[H] 
+\centering
+\setlength{\tabcolsep}{10pt}
+\input{tab/u1_a}
+\caption{Hodnoty naměřené a vypočtené s použitím zapojení $a$}
+\label{tab:u1_a}
+\end{table}
+
+\begin{figure}[H] 
+\centering
+\includegraphics[]{plot/u1_a2}
+\caption{Graf závislosti nekorigovaného odporu na proudu pomocí zapojení $a$}
+\label{fig:u1_a}
+\end{figure}
+
+\begin{figure}[H] 
+\centering
+\includegraphics[]{plot/u1_a_kor2}
+\caption{Graf závislosti korigovaného odporu na proudu pomocí zapojení $a$}
+\label{fig:u1_a_kor}
+\end{figure}
+
+Hodnoty, naměřené přímou metodou měření odporu pomocí zapojení 1$b$ jsou uvedeny v tabulce \ref{tab:u1_b}. Závislost nekorigovaného odporu na proudu je vynesena v grafu \ref{fig:u1_b}, závislost korigovaného odporu na proudu v grafu \ref{fig:u1_b_kor}.
+
+\begin{table}[H]
+\centering
+\setlength{\tabcolsep}{10pt}
+\input{tab/u1_b}
+\caption{Hodnoty naměřené a vypočtené s použitím zapojení $b$}
+\label{tab:u1_b}
+\end{table}
+
+\begin{figure}[H] 
+\centering
+\includegraphics[]{plot/u1_b}
+\caption{Graf závislosti nekorigovaného odporu na proudu pomocí zapojení $b$}
+\label{fig:u1_b}
+\end{figure}
+
+\begin{figure}[H] 
+\centering
+\includegraphics[]{plot/u1_b_kor}
+\caption{Graf závislosti korigovaného odporu na proudu pomocí zapojení $b$}
+\label{fig:u1_b_kor}
+\end{figure}
+
+\subsection*{Úkol 2}
+Vnitřní odpor ampérmetru substituční metodou byl měřen pro rozsah $\SI{75}{mA}$. Jako srovnávací proud jsem použil hodnotu $\SI{18 \pm 0,05}{mA}$. Pomocí odporové dekády byla určena hodnota vnitřního odporu ampérmetru $\SI{4,1 \pm 0,004}{\ohm}$.
+
+Vnitřní odpor voltmetru substituční metodou jsem určil pro rozsah $\SI{30}{\volt}$. Použil jsem srovnávací proud  $\SI{1,8 \pm 0,005}{mA}$. Opět pomocí odporové dekády byla určena hodnota vnitřního odporu voltmetru $\SI{15 \pm 0,02}{\kilo\ohm}$.
+
+Odpory zbylých rozsahů jsem měřil digitálním multimetrem. Rozsahu, vhodnému k měření všech hodnot odporů voltmetru, odpovídá chyba $0,8 \percent$  z naměřené hodnoty $\pm 2$ digity, pro hodnoty odporů ampérmetru taktéž $0,8 \percent$ z naměřené hodnoty $\pm 4$ digity. 
+
+\begin{table}[H]
+\parbox{.45\linewidth}{ \label{tab:odpory_A}
+\centering
+\setlength{\tabcolsep}{15pt}
+\input{tab/odpory_A}
+\caption{Odpory ampérmetru měřené digitálním multimetrem}
+\label{tab:ampermetr}
+}
+\hfill
+\parbox{.45\linewidth}{ \label{tab:odpory_V}
+\centering
+\setlength{\tabcolsep}{15pt}
+\input{tab/odpory_V}
+\caption{Odpory voltmetru měřené digitálním multimetrem}
+\label{tab:voltmetr}
+}
+\end{table}
+
+\newpage
+
+\subsection*{Úkol 3}
+
+Následující tabulka obsahuje hodnoty proudu a odporu měřené substituční metodou.
+
+\begin{table}[H] 
+\centering
+\setlength{\tabcolsep}{10pt}
+\input{tab/u3}
+\caption{Závislost odporu na proudu měřená substituční metodou}
+\label{tab:u3}
+\end{table}
+
+\newpage
+
+V grafu \ref{fig:u3} je znázorněna závislost odporu vlákna žárovky na procházejícím proudu. Data jsou opět proložena kvadratickým a lineárním fitem.
+\begin{figure}[H]
+\centering
+\includegraphics[]{u3}
+\caption{Graf závislosti odporu na proudu měřené substituční metodou}
+\label{fig:u3}
+\end{figure}
+
+Odpor byl změřen také digitálním multimetrem, výsledkem je hodnota $R = \SI{43.0 \pm 0.3}{\ohm}.$
+
+\newpage
+
+\subsection*{Úkol 5}
+Závislost podle rovnice \eqref{eq:regrese} je vyobrazena v grafu \ref{fig:u5}. Bylo použito prvních 6 hodnot z úkolu 3. Pomocí lineární regrese byla určena hodnota odporu žárovky při pokojové teplotě $\SI{42.35 \pm 0.09}{\ohm}$.
+
+\begin{figure}[H]
+\centering
+\includegraphics[]{u5}
+\caption{Lineární závislost prvních šesti hodnot příkonu a odporu}
+\label{fig:u5}
+\end{figure}
+
+\end{document}

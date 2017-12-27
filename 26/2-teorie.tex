@@ -1,0 +1,36 @@
+\documentclass[0-protokol.tex]{subfiles}
+\begin{document}
+
+V elektrolytech vznikají disociací kladné kationty a záporné anionty. Elektrolyty dělíme na silné a slabé podle míry disociace rozpuštěné látky, u silných elektrolytů se rozpouštěná látka disociuje téměř celá, naopak u slabých se disociuje jen malé procento rozpouštěné látky.
+
+Měrnou elektrickou vodivost elektrolytu můžeme vyjádřit jako
+\begin{equation}
+    \sigma = z F c_M b,
+\end{equation}
+kde $z$ je nábojové číslo iontu, $F = e N_A$ - elementární náboj krát Avogadrova konstanta - je Faradayova konstanta, $c_M$ je molární koncentrace rozpuštěné látky a $b$ pohyblivost iontů.
+
+Tento vztah je zřejmě nevhodný pro srovnávání měrných vodivostí elektrolytů různých koncentrací. Pro tento účel zavádíme molární konduktivitu 
+\begin{equation}
+    \Lambda = \frac{\sigma}{c_M} = z F b,
+\end{equation}
+která nezávisí explicitně na koncentraci. U silných elektrolytů však vzájemné interakce iontů kvůli vysoké koncentraci brání jejich pohybu, pohyblivost iontů $b$ tedy na koncentraci závisí. Molární konduktivitu lze pak v závislosti na koncentraci popsat pomocí empirického vztahu
+\begin{equation}
+    \Lambda = \Lambda^0 - k \sqrt{c_M},
+\end{equation}
+kde $k$ je konstanta a $\Lambda^0$ limitní molární konduktivita při nekonečném zředění.
+
+Molární koncentraci výsledné směsi spočteme z koncentrace připraveného roztoku $c_{M_0}$, objemu připraveného roztoku ve směsi $V_0$ a výsledného objemu směsi $V$ jako 
+\begin{equation}
+    c_M = c_{M_0} \frac{V_0}{V}.
+\end{equation}
+
+Statistická chyba $s$ $n$ naměřených hodnot shodného jevu se získá ze vztahu
+\begin{equation} \label{eq:chyba}
+s_{stat} = \sqrt{\frac{1}{n-1} \sum\limits_{i=1}^n{(x_i - \overline{x})^2}}.
+\end{equation}
+Statistickou chybu sčítáme s chybou přístroje podle vztahu
+\begin{equation} \label{eq:chyba_soucet}
+s_{abs} = \sqrt{s_{\text{\textit{měř}}}^2 + s_{stat}^2}.
+\end{equation}
+
+\end{document}

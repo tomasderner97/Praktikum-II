@@ -1,0 +1,51 @@
+\documentclass[0-protokol.tex]{subfiles}
+\begin{document}
+
+\subsection*{Úkol 1}
+Pomocí zapojení \ref{fig:zap_u1} jsem na osciloskopu odečetl špičkové napětí $U_{0, osc} = \SI{10,8 \pm 0,2}{V}$ při nastaveném rozsahu $\SI{2}{V}$. Za chybu jsem určil polovinu nejmenšího dílku stupnice.
+
+Na digitálním multimetru, nastaveného na rozsah $\SI{20}{V}$ střídavého napětí, jsem změřil efektivní hodnotu napětí $\SI{7,67 \pm 0,06}{V}$, což po přepočtu podle vzorce \eqref{eq:ef_napeti} dá špičkovou hodnotu napětí $U_{0, mm} = \SI{10,85 \pm 0,08}{\volt}$.
+
+\subsection*{Úkol 2}
+V následující tabulce uvádím naměřené hodnoty pro úkol 2a pomocí zapojení \ref{fig:zapojeni_filtrace} (bez ampérmetru). Chyba kapacity byla určena jako $\SI{1}{\percent}$ z hodnoty, nastavené na kapacitní dekádě, chyba napětí byla určena odhadem, jelikož hodnota, zobrazovaná multimetrem, se chaoticky měnila v menším či větším okolí uvedených hodnot.
+\begin{table}[H] 
+\centering
+\setlength{\tabcolsep}{15pt}
+\input{tab/u2a}
+\caption{Naměřené hodnoty pro úkol 2a}
+\label{tab:u2a}
+\end{table}
+
+Průběh závislosti stejnosměrné složky napětí na filtrační kapacitě uvádím v následujícím grafu.
+\begin{figure}[H]
+\centering
+\includegraphics[]{u2a}
+\caption{Závislost stejnosměrného napětí na filtrační kapacitě}
+\label{fig:u2a}
+\end{figure}
+
+Následující tabulka obsahuje hodnoty, naměřené pro úkol 2b pomocí zapojení \ref{fig:zapojeni_filtrace}. Chyby byly určeny shodně s předešlým případem.
+\begin{table}[H] 
+\centering
+\setlength{\tabcolsep}{15pt}
+\input{tab/u2b}
+\caption{Naměřené hodnoty pro úkol 2b}
+\label{tab:u2b}
+\end{table}
+
+Lineární závislost filtrační kapacity na protékaném proudu je vyobrazena v následujícím grafu. Protože relativní chyby proudu jsou mnohem významnější než chyby kapacity, graf obsahuje horizontální chybové úsečky.
+\begin{figure}[H]
+\centering
+\includegraphics[]{u2b}
+\caption{Závislost filtrační kapacity na protékaném proudu}
+\label{fig:u2b}
+\end{figure}
+
+\subsection*{Úkol 3}
+S pomocí zapojení \ref{fig:volt-amper} jsem při sledování volt-ampérové charakteristiky z displeje osciloskopu odečetl proud při nulovém napětí $I_{U=\SI{0}{V}} = \SI{1 \pm 0,05}{mA}$ a napětí při proudu $\SI{20}{mA}$ $U_{A=\SI{20}{mA}} = \SI{5,2 \pm 0,2}{V}$. Tyto hodnoty jsou také zakresleny v přiloženém obrázku 9.
+
+Při měření Zenerovy diody jsem odečetl napětí při proudu $\SI{20}{mA}$ $U_{A=\SI{20}{mA}} = \SI{0,7 \pm 0,03}{V}$ a Zenerovo napětí $U_{Zener} = \SI{-6,6 \pm 0,03}{V}$. Tyto hodnoty jsou zakresleny v přiloženém obrázku 10.
+
+Všechny uvedené chyby byly určeny velikostí nejmenšího dílku stupnice osciloskopu na rozdíl od úkolu 1, kde jsem použil polovinu nejmenšího dílku. Může za to fakt, že tělo osciloskopu bylo patrně mírně zmagnetováno a volt-ampérová charakteristika byla mírně zdvojena. 
+
+\end{document}

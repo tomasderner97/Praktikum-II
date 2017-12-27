@@ -1,0 +1,66 @@
+\documentclass[0-protokol.tex]{subfiles}
+\begin{document}
+
+\subsection*{Úkol 1}
+
+Tabulka \ref{tab:va} obsahuje naměřené hodnoty statické voltampérové charakteristiky termistoru. Pro měření napětí i proudu byly použity multimetry \textbf{METEX MXD-4660A} při nastavení DC V s rozsahem $\SI{2}{V}$, resp. DC A s rozsahem $\SI{200}{mA}$. Uvedené chyby odpovídají chybě přístroje.% při těchto nastaveních.
+\begin{table}[H] 
+\centering
+\setlength{\tabcolsep}{7pt}
+\input{tab/va}
+\caption{Naměřené hodnoty napětí a proudu pro statickou charakteristiku termistoru}
+\label{tab:va}
+\end{table}
+
+\subsection*{Úkol 2}
+V následující tabulce jsou uvedeny hodnoty odporů teploměru, přepočtené teploty a odpovídající odpory termistoru. Odpory byly měřeny multimetry \textbf{METEX MXD-4660A}, pro $R_{Pt}$ s nastavením OHM $\SI{200}{\ohm}$, pro $R_t$ do hodnoty $\SI{245}{\ohm}$ s nastavením OHM $\SI{200}{\kilo\ohm}$, dále s rozsahem $\SI{2}{\kilo\ohm}$. Teploty byly spočteny podle vzorce \eqref{eq:teplota_z_odporu}, chyby podle zákona přenosu chyb.
+\begin{table}[H] 
+\centering
+\setlength{\tabcolsep}{8pt}
+\footnotesize
+\input{tab/rt}
+\normalsize
+\caption{Hodnoty pro určení závislosti odporu termistoru na teplotě}
+\label{tab:rt}
+\end{table}
+
+Následující graf vyobrazuje naměřenou závislost proloženou exponenciálním fitem.
+\begin{figure}[H]
+\centering
+\includegraphics[]{rt}
+\caption{Závislost odporu termistoru na teplotě}
+\label{fig:rt}
+\end{figure}
+
+\subsection*{Úkol 3 a 4}
+
+V grafu \ref{fig:fit_log_R} je zobrazena lineární závislost $\log R_t$ na $1/T$ spolu s regresní přímkou podle rovnice \eqref{eq:log_R}. Z té jsme určili hodnoty
+$$ B = \SI{2610 \pm 12}{\kelvin}, $$
+$$ R_\infty = \SI{0.086 \pm 0.004}{\ohm}. $$
+Podle vzorce \eqref{eq:delta_U} byla spočtena aktivační energie $\Delta U$ a podle \eqref{eq:alpha} teplotní součinitel odporu při teplotě $\SI{298.15}{\kelvin}$
+$$ \Delta U = \SI{43.40 \pm 0.19 e3}{\joule\per\mole}, $$
+$$ \alpha = \SI{29.4 \pm 0.2 e-3}{\per\kelvin}. $$
+
+Graf \ref{fig:va} ukazuje statickou voltampérovou charakteristiku termistoru a teplotu termistoru při protékajícím proudu, vypočtenou podle \eqref{eq:K}. Potřebné konstanty $T_0$ a $T_m$ byly určeny z lineární regrese lineární části grafu \ref{fig:va} a srovnáním s průběhem teplotní závislosti odporu, respektive ze vztahu \eqref{eq:teplota_v_max}:
+$$ T_0 = \SI{295.5 \pm 0.5}{\kelvin},$$
+$$ T_m = \SI{339.7 \pm 0.7}{\kelvin}. $$
+
+Konstanta $K$ byla spočtena podle vzorce \eqref{eq:K} s použitím výše uvedených konstant
+$$ K = \SI{7.14 \pm 0.08 e3}{\kelvin\per\watt}. $$
+\begin{figure}[H]
+\centering
+\includegraphics[]{fit_log_R}
+\caption{Lineární regrese závislosti $\log R_t$ na $1/T$}
+\label{fig:fit_log_R}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[]{va}
+\caption{Statická voltampérová charakteristika termistoru s průběhem teploty}
+\label{fig:va}
+\end{figure}
+
+
+
+\end{document}

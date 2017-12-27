@@ -1,0 +1,48 @@
+\documentclass[0-protokol.tex]{subfiles}
+\begin{document}
+
+Pomocí digitálního konduktometru byla změřena měrná elektrická vodivost destilované vody při teplotě $\SI{21}{\celsius}$
+$$ \sigma_{H_2O} = \SI{1.05 \pm 0.01}{\micro\siemens\per\centi\metre}.$$
+Chyba hodnoty byla určena podle chyby přístroje na $\SI{0.5}{\percent}$ z naměřené hodnoty.
+
+Pomocí pipety byly připraveny vodní roztoky kyseliny chlorovodíkové, sloužící jako silný elektrolyt, a octové jakožto slabý elektrolyt o celkových objemech $\SI{100}{ml}$. Pomocí konduktometru byla čtyřikrát změřena hodnota měrné vodivosti roztoku \textit{HCl}, výsledek je uveden v tabulce \ref{tab:chyba}. Pomocí vzorce \eqref{eq:chyba} byla spočítaná statistická chyba měření $s_\sigma = \SI{0.97}{\micro\siemens\per\centi\metre} \doteq \SI{1}{\micro\siemens\per\centi\metre}$. S touto zaokrouhlenou hodnotou je dále nakládáno jako s statistickou chybou měření všech dalších hodnot. Chyba pipety je považována za součást této chyby, chybu konduktometru je především u koncentrovanějších roztoků $HCl$ přičíst podle \eqref{eq:chyba_soucet}.
+
+\begin{table}[H] 
+\centering
+\setlength{\tabcolsep}{10pt}
+\input{tab/chyba}
+\caption{Čtyři měření měrné vodivosti roztoku \SI{2}{ml} \textit{HCl}}
+\label{tab:chyba}
+\end{table}
+
+Následující tabulka shrnuje naměřené hodnoty měrných vodivostí roztoků kyseliny chlorovodíkové a octové spolu s přepočtem objemových zlomků rozpuštěných látek na molární koncentrace a jejich molární konduktivity.
+
+\begin{table}[H] 
+\centering
+\setlength{\tabcolsep}{10pt}
+\input{tab/koncentrace}
+\caption{Tabulka naměřených a spočtených hodnot pro silný a slabý elektrolyt}
+\label{tab:koncentrace}
+\end{table}
+
+Následující grafy znázorňují průběh závislosti $\Lambda$ na $\sqrt{c_M}$.
+
+\begin{figure}[H]
+\centering
+\includegraphics[]{silny}
+\caption{Závislost molární konduktivity roztoku kyseliny chlorovodíkové na odmocnině z molární koncentrace}
+\label{fig:silny}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[]{slaby}
+\caption{Závislost molární konduktivity roztoku kyseliny octové na odmocnině z molární koncentrace}
+\label{fig:slaby}
+\end{figure}
+
+Z lineárních regresí byly odečteny hodnoty 
+$$ \Lambda_{0_{HCl}} = \SI{0.01083 \pm 0.00020}{\siemens\metre\squared\per\mole},$$
+$$ \Lambda_{0_{CH_3COOH}} = \SI{0.045 \pm 0.004}{\siemens\metre\squared\per\mole}. $$
+
+\end{document}
