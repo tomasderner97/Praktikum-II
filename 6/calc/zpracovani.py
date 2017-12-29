@@ -204,7 +204,7 @@ def main():
     # plot_u5_ucinik_fi(u5)
     # plot_u5_p(u5)
 
-    print(noms(u5.abs_fi))
+    print("{}, {}".format(*u3_paralelni(u1d)))
 
 
 if __name__ == '__main__':

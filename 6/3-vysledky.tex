@@ -1,44 +1,44 @@
 \documentclass[0-protokol.tex]{subfiles}
 \begin{document}
 
+Pro všechna měření byl použit zdroj \textbf{STATRON 50 V}.
+
+\subsection*{Úkol 1}
+Následující tabulka obsahuje naměřené hodnoty napětí, proudu a výkonu odporu, cívky a kondenzátoru potřebné k výpočtu účiníku a absolutní hodnoty fázového posunu jakožto i tyto vypočtené hodnoty. Účiník byl počítán pomocí vztahu \eqref{eq:vykon}. Jako voltmetr byl použit multimetr \textbf{METEX MXD-4660A}, jako ampérmetr sloužil multimetr \textbf{METEX M-3270D}. Pro měření výkonu byl použit analogový wattmetr s rozsahem $\SI{75}{V}$, $\SI{0.5}{A}$. Chyby veličin byly určeny chybami přístrojů.
 \begin{table}[H] 
 \centering
 \setlength{\tabcolsep}{8pt}
 \input{tab/u1a}
-\caption{Tabulka}
+\caption{Hodnoty pro úkol 1 při použití analogového wattmetru}
 \label{tab:u1a}
 \end{table}
+
+V následující tabulce jsou uvedeny výsledky totožného experimentu měřené digitálním wattmetrem \textbf{HM-8115-2}. Výpočty a chyby byly provedeny stejně jako výše.
 
 \begin{table}[H] 
 \centering
 \setlength{\tabcolsep}{8pt}
 \input{tab/u1d}
-\caption{Tabulka}
+\caption{Hodnoty pro úkol 1 při použití digitálního wattmetru}
 \label{tab:u1d}
 \end{table}
 
+\subsection*{Úkol 3}
+Pomocí vztahů \eqref{eq:R_s}, \eqref{eq:L_s}, \eqref{eq:R_p} a \eqref{eq:L_p} byly spočteny hodnoty odporu a indukčnosti sériového a paralelního zapojení cívky
+$$ R_s = \SI{1.11 \pm 0.19 e3}{\ohm}, $$
+$$ L_s = \SI{4.0 \pm 0.7}{\henry}, $$
+$$ R_p = \SI{2.5 \pm 0.4 e3}{\ohm}, $$
+$$ L_p = \SI{7.1 \pm 1.2}{\henry}. $$
+
+\subsection*{Úkol 4}
+
+Tabulky \ref{tab:u4s} a \ref{tab:u4p} obsahují naměřené hodnoty napětí, proudu a výkonu sériového a paralelního RC obvodu v závislosti na kapacitě. Dále v nich lze nalézt vypočítané účiníky a fázové posuny. Ty jsou také zaznamenány v odpovídajících grafech \ref{fig:u4s} a \ref{fig:u4p}. Pro měření byl opět použit digitální wattmetr, chyby sestávají z chyb přístroje.
 \begin{table}[H] 
 \centering
 \setlength{\tabcolsep}{8pt}
 \input{tab/u4s}
-\caption{Tabulka}
+\caption{Hodnoty pro úkol 4 pro sériový RC obvod}
 \label{tab:u4s}
-\end{table}
-
-\begin{table}[H] 
-\centering
-\setlength{\tabcolsep}{8pt}
-\input{tab/u4p}
-\caption{Tabulka}
-\label{tab:u4p}
-\end{table}
-
-\begin{table}[H] 
-\centering
-\setlength{\tabcolsep}{8pt}
-\input{tab/u5}
-\caption{Tabulka}
-\label{tab:u5}
 \end{table}
 
 \begin{figure}[H]
@@ -48,12 +48,36 @@
 \label{fig:u4s}
 \end{figure}
 
+\begin{table}[H] 
+\centering
+\setlength{\tabcolsep}{8pt}
+\input{tab/u4p}
+\caption{Hodnoty pro úkol 4 pro paralelní RC obvod}
+\label{tab:u4p}
+\end{table}
+
 \begin{figure}[H]
 \centering
 \includegraphics[]{u4p}
 \caption{Závislost účiníku a fázového posunu paralelního zapojení rezistoru a kondenzátoru}
 \label{fig:u4p}
 \end{figure}
+
+V průběhu měření byl připojen osciloskop \textbf{Tektronix} podle úkolu 6. Fázový rozdíl napětí na kondenzátoru vůči napětí zdroje se se zvyšující kapacitou snižuje. Při malých kapacitách totiž převládá impedance kapacity, která implikuje velký fázový rozdíl, při velké kapacitě naopak převládá impedance odporu.
+
+\newpage
+\subsection*{Úkol 5}
+V tabulce \ref{tab:u5} jsou zaznamenány naměřené hodnoty napětí, proudu a výkonu RLC obvodu v závislosti na kapacitě spolu se spočtenými účiníky a fázovými posuny. Průběh měření a výpočet chyb odpovídá úloze 4. 
+
+V grafu \ref{fig:u5p} je  vyobrazena závislost výkonu na RLC obvodu na kapacitě, v grafu \ref{u5uf} závislost účiníku a absolutní hodnoty fázového posunu na kapacitě.
+
+\begin{table}[H] 
+\centering
+\setlength{\tabcolsep}{8pt}
+\input{tab/u5}
+\caption{Tabulka}
+\label{tab:u5}
+\end{table}
 
 \begin{figure}[H]
 \centering
